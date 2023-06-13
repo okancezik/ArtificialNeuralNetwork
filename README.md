@@ -1,6 +1,33 @@
-<h5>Yapay Sinir Ağları Hakkında</h5>
+<h3>Yapay Sinir Ağları Hakkında</h3>
 <p>Yapay sinir ağları, biyolojik sinir hücrelerinin yapısından ve çalışmasından esinlenerek oluşturulan bir yapay zeka tekniğidir. 
 Yapay sinir ağları, birbirleriyle bağlantılı katmanlardan oluşur. Her katman bir dizi yapay sinir hücresi nöronlardan oluşur. Bu nöronlar, ağırlıklı bağlantılar aracılığıyla birbirine bağlanır. Ve her bir nöron kendi belleğine sahip işlem elemanlarından oluşan paralel ve dağıtılmış bilgi işleme yapılarıdır. 
 Yapay sinir ağlarında bilgilerin işlenmesi paralel olarak gerçekleşir. Bu sebeple taşınan bilgiler birbirinden bağımsızdır. Paralel çalışma nöronlar arasında bilgi akış hızını da arttırmaktadır.
 Yapay sinir ağları sahip olduğu çeşitli özellikler sayesinde bir çok farklı yönteme göre daha etkin süreçler geçirir. Tabi ki bunun neticesinde geniş bir kullanım alanına sahiptir ve birçok farklı problemin çözümünde etkili olabilir. Örneğin, Görünte ve Ses işlemede, Doğal Dil İşleme, Robotik ve Kontrol Sistemlerinde, Sınıflandırma ve Tahminleme gibi birçok problem için kullanılabilir.
 </p>
+
+<p>Yapay sinir ağlarının birbirine bağlı katmanlardan oluştuğunu söylemiştik. Genellikle üç temel katmandan oluşan yapısı vardır. Bu katmanlar hakkında biraz bilgi edinelim.</p>
+<ul>
+  <li>
+    <p>
+      Girdi katmanı, verilerin sinir ağımıza girdi olarak verildiği katmandır. Bu katmandaki nöron sayısı verilerimizdeki toplam özellik sayısı adetindedir.      </p>      
+ </li>
+ <li>
+   <p>
+     Gizli katman, oluşturulan mimariye göre birden fazla gizli katman bulunabilir ve her katmanda farklı sayıda nöron bulunabilir.
+     Giriş katmanından gelen veri bu katmanda çeşitli işlemler geçirir. Her katmanın çıktısı, bir  önceki katmanın çıktısının o katmanın ağırlıkları ile          çarpılır ve bias değeri eklenir. Daha sonra ağa non-lineerlik özelliği getiren aktivasyon fonksiyonu ile hesaplanır.
+   </p>
+   <p>
+     Aktivasyon fonksiyonları hakkında kısaca bilgi vermeyi istiyorum.
+     Aktivasyon fonksiyonları modelimizin öğrenme aşamasında çok önemli yer tutar. Bu fonksiyonlar sinir ağımıza nonlineerlik özelliği kazandırır. Aktivasyon
+     fonksiyonları, nöronlar arasında gerçekleşen işlemleri standardize eder. Örneğin aktivasyon fonksiyonundan önce gerçekleşen ağırlıklar ile çarpıp bias
+     değeri eklendikten sonra oluşan sonuç -∞ ile +∞ arasında olur. Bu sonucu örneğin sigmoid aktivasyon fonksiyonundan geçirdiğimizde sonuç 0 ile 1 arasında       bir değer alır. 
+   </p>  
+  </li>  
+  <li>
+    <p>
+      Çıktı katmanı, 	yapay sinir ağının son katmanıdır ve genellikle probleme bağlı olarak farklı yapılar ve sayıda nöron içerebilir. Eğer sinir ağımız           sınıflandırma yapıyorsa sınıf sayısı kadar nöron bulunur. Veya bir regresyon probleminde tek bir çıkış nöronu olabilir.
+    </p>  
+  </li>  
+</ul>  
+
+
